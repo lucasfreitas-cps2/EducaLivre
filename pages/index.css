@@ -32,44 +32,59 @@ body {
   font-size: 2rem;
 }
 
-/* Menu inicialmente oculto */
+/* Menu escondido por padrão com altura 0 e transição suave */
 .menu-navegacao {
-  display: none; /* Esconde o menu */
-  flex-direction: column;
-  background-color: #f0f0ff;
-  padding: 1rem;
-  position: absolute;
-  top: 100%; /* Alinha abaixo do header */
-  right: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+  background-color: white;
   border-radius: 0.5rem;
-  z-index: 1000;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Lista do menu sem marcadores */
+/* Quando o menu estiver ativo, ele se expande */
+.menu-navegacao.ativo {
+  max-height: 500px; /* Valor grande o suficiente para mostrar tudo */
+  padding: 1rem;
+}
+
+/* Lista interna do menu */
 .menu-navegacao ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* Cada item do menu */
 .menu-navegacao li {
-  margin: 0.5rem 0;
+  margin-bottom: 0.8rem;
 }
 
-/* Estilo dos links do menu */
-.menu-navegacao a {
+.menu-navegacao li a {
   text-decoration: none;
   color: #0a2f52;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
+  transition: color 0.3s;
 }
 
-.menu-navegacao a:hover {
-  text-decoration: underline;
+.menu-navegacao li a:hover {
+  color: #5272ff;
 }
 
+/* Mostra o ícone do menu sempre */
+.menu-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-icon i {
+  font-size: 2rem;
+  color: #0a2f52;
+}
 
 @media (min-width: 600px) {
   .cabecalho {

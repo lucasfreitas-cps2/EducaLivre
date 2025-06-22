@@ -281,3 +281,75 @@ body{
 
   }
 }
+/* Menu escondido por padrão com altura 0 e transição suave */
+.menu-navegacao {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Quando o menu estiver ativo, ele se expande */
+.menu-navegacao.ativo {
+  max-height: 500px; /* Valor grande o suficiente para mostrar tudo */
+  padding: 1rem;
+}
+
+/* Lista interna do menu */
+.menu-navegacao ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-navegacao li {
+  margin-bottom: 0.8rem;
+}
+
+.menu-navegacao li a {
+  text-decoration: none;
+  color: #0a2f52;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.menu-navegacao li a:hover {
+  color: #5272ff;
+}
+
+/* Mostra o ícone do menu sempre */
+.menu-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-icon i {
+  font-size: 2rem;
+  color: #0a2f52;
+}
+/* Estilo inicial do menu escondido */
+.menu-navegacao {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  grid-column: 1 / -1; /* Faz o menu ocupar toda a largura no grid */
+}
+
+/* Quando ativado (via JS) */
+.menu-navegacao.ativo {
+  max-height: 200px; /* Ajuste conforme necessário */
+  padding: 1rem;
+}
+
+

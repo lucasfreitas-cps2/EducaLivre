@@ -1,12 +1,12 @@
-
+document.addEventListener('DOMContentLoaded', function () {
   const menuIcon = document.querySelector('.menu-icon');
   const menu = document.querySelector('.menu-navegacao');
 
-  menuIcon.addEventListener('click', () => {
-    if (menu.style.display === 'flex') {
-      menu.style.display = 'none';
-    } else {
-      menu.style.display = 'flex';
-    }
-  });
-
+  if (menuIcon && menu) {
+    menuIcon.addEventListener('click', () => {
+      menu.classList.toggle('ativo');
+    });
+  } else {
+    console.error("Menu ou ícone não encontrado");
+  }
+});
