@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - EducaIgual</title>
+  <link rel="stylesheet" href="cadastro.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <!-- Font awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+</head>
+
+<body>
+  <header class="cabecalho">
+  <div class="logo">
+    <a href="/pages/index.html">
+    <img src="/img/Logo.svg" alt="logotipo EducaLivre">
+  </a>
+  </div>
+  <div class="container-busca">
+    <input type="text" placeholder="Encontre uma Instituição">
+    <button><i class="fas fa-search"></i></button>
+  </div>
+  <div class="actions">
+    <span>Torne-se Um Avaliador!</span>
+    <button class="cadastro-btn">Cadastro</button>
+
+    <span>Logue aqui!</span>
+    <button onclick="window.location.href='login.html' " class="cadastro-btn">login</button>
+  </div>
+  <div class="menu-icon">
+    <i class="fas fa-bars"></i>
+  </div>
+  <nav class="menu-navegacao">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="/pages/priv.html">Política de Privacidade</a></li>
+      <li><a href="/pages/Sc.html">Sobre Nós</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="content-wrapper">
+    <main>
+      <div class="container">
+        <form class="form-box">
+          <h1>Cadastro</h1>
+
+          <div class="input-group">
+            <label for="username">E-mail:</label>
+            <input type="text" id="username" />
+          </div>
+
+          <div class="input-group">
+            <label for="senha">Crie uma senha:</label>
+            <input type="password" id="senha" />
+          </div>
+
+          <div class="input-group">
+            <label for="confirmar">Confirme a Senha:</label>
+            <input type="password" id="confirmar" />
+          </div>
+
+         
+        </form>
+        <button onclick="window.location.href='index.html' " class="btn">Cadastro</button>
+      </div>
+    </main>
+  </div>
+ <footer class="rodape">
+    <div class="rodape-conteudo">
+      <p>2025 EducaLivre</p>
+
+      <div class="rodape-links">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="/pages/Sc.html">Sobre nós</a></li>
+          <li><a href="/pages/priv.html">Política de privacidade</a></li>
+        </ul>
+      </div>
+      <a href="#" class="voltar-topo">
+        <i class="fas fa-chevron-up"></i> Voltar ao topo
+      </a>
+    </div>
+  </footer>
+  <script src="/pages/code.js"></script>
+</body>
+</html>
