@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducaLivre</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- Font awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Fonte Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+ 
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="logo">
+      <img src="/img/Logo que fica no header.png" alt="Logotipo EducaLivre">
+    </div>
+    <div class="container-busca">
+      <input type="text" placeholder="Encontre uma Instituição">
+      <button aria-label="Buscar instituição"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="actions">
+      <span>Torne-se Um Avaliador!</span>
+      <button onclick="window.location.href='cadastro.html' " class="cadastro-btn">Cadastro</button>
+      <span>Logue aqui!</span>
+      <button onclick="window.location.href='login.html' " class="cadastro-btn">login</button>
+    </div>
+    <div class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav class="menu-navegacao">
+      <ul>
+        <li><a href="cadastro.html">Cadastrar-se</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="/pages/priv.html">Política de Privacidade</a></li>
+        <li><a href="/pages/Sc.html">Sobre Nós</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+  <main class="conteudo">
+    <h1 class="titulo">Instituições de Destaque</h1>
+
+    <section class="cards">
+      <div class="container-cards">
+
+        <div class="instituicao-card">
+          <img
+            src="/img/01escola.jpg"
+            alt="Prédio Principal da Academia da Frota Estelar" class="imagem-escola" />
+          <div class="info-escola">
+            <h2 class="nome-escola">Academia Da Frota Estelar da Federação Unida do Planetas</h2>
+            <div class="selo">
+              <img src="/img/selos/educa/03.png" alt="Selo de Apoio à Iniciação Científica e Projetos">
+              <img src="/img/selos/educa/05.png" alt="Selo de Biblioteca Atualizada">
+              <img src="/img/selos/educa/04.png" alt="Selo de Participação Estudantil">
+              <img src="/img/selos/educa/07.png" alt="Selo de Qualificação Docente">
+              <img src="/img/selos/igual/06.png" alt="Selo de Liderança Feminina">
+              <img src="/img/selos/igual/04.png" alt="Selo de Igualdade Salarial">
+              <img src="/img/selos/igual/03.png" alt="Selo de Banheiros Neutros ou Inclusivos">
+            </div>
+          </div>
+          <div class="nota">
+            <i class="fa-solid fa-book-open" style="color: #0a2f52;"></i>
+            <span class="valor">4.78</span>
+          </div>
+        </div>
+
+        <div class="instituicao-card">
+          <img
+            src="/img/03escola.jpg"
+            alt="Fachada da escola E.M ANTONIO FAGUNDES" class="imagem-escola" />
+          <div class="info-escola">
+            <h2 class="nome-escola">Escola para Jovens Superdotados - Instituto Xavier</h2>
+            <div class="selo">
+              <img src="/img/selos/educa/06.png" alt="Selo de Transparência Acadêmica">
+              <img src="/img/selos/educa/05.png" alt="Selo de Biblioteca Atualizada">
+              <img src="/img/selos/educa/04.png" alt="Selo de Participação Estudantil">
+              <img src="/img/selos/igual/02.png" alt="Selo de Representatividade Curricular">
+              <img src="/img/selos/igual/04.png" alt="Selo de Igualdade Salarial">
+            </div>
+          </div>
+          <div class="nota">
+            <i class="fa-solid fa-book-open" style="color: #0a2f52;"></i>
+            <span class="valor">3.47</span>
+          </div>
+        </div>
+
+        <div class="instituicao-card">
+          <img
+            src="/img/02escola.jpg"
+            alt="Panorama da Torre de Marfin" class="imagem-escola" />
+          <div class="info-escola">
+            <h2 class="nome-escola">Instituto de Estudos Mágicos - Torre de Marfim</h2>
+            <div class="selo">
+              <img src="/img/selos/educa/05.png" alt="Selo de Transparência Acadêmica">
+              <img src="/img/selos/educa/07.png" alt="Selo de Biblioteca Atualizada">
+              <img src="/img/selos/educa/06.png" alt="Selo de Participação Estudantil">
+              <img src="/img/selos/igual/03.png" alt="Selo de Representatividade Curricular">
+              <img src="/img/selos/igual/01.png" alt="Selo de Igualdade Salarial">
+            </div>
+          </div>
+          <div class="nota">
+            <i class="fa-solid fa-book-open" style="color: #0a2f52;"></i>
+            <span class="valor">2.59</span>
+          </div>
+
+        </div>
+
+        <section class="avaliacoes-recentes">
+          <h2>Avaliações Recentes</h2>
+
+          <div class="avaliacao-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Avatar do usuário" class="avatar">
+            <div class="avaliacao-conteudo">
+              <div class="topo">
+                <strong>Junior6432</strong>
+                <span class="tag">Aluno</span>
+              </div>
+              <p class="comentario">“Essa Foi a melhor escola que eu já estudei!”</p>
+              <p class="escola">E.E Prof Francisco Cisco</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="avaliacao-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Avatar do usuário" class="avatar">
+        <div class="avaliacao-conteudo">
+          <div class="topo">
+            <strong>Maria_123</strong>
+            <span class="tag">Ex-Aluno</span>
+          </div>
+          <p class="comentario">
+            “Concluí meu Ensino Médio nessa instituição, bons professores, mas precisa de melhorias na questão de
+            igualdade racial”
+          </p>
+          <p class="escola">E.E Prof Antônio Ferreira</p>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    </div>
+
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="rodape-conteudo">
+
+
+      <p>&copy; 2025 EducaLivre</p>
+
+
+      <div class="rodape-links">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="/pages/Sc.html">Sobre nós</a></li>
+          <li><a href="/pages/priv.html">Política de privacidade</a></li>
+        </ul>
+      </div>
+      <a href="#" class="voltar-topo">
+        <i class="fas fa-chevron-up"></i> Voltar ao topo
+      </a>
+    </div>
+  </footer>
+   <script src="./code.js"></script>
+</body>
+
+</html>
