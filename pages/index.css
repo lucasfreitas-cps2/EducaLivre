@@ -416,3 +416,59 @@ body {
   color: #2121cc;
   text-decoration: underline;
 }
+
+/* Inicio */
+ .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4f46e5;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.125rem;
+    color: #374151;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .card {
+    background-color: #f3f4f6;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+  }
+  .card-container{
+        display: flex;                /* Faz os cards ficarem lado a lado */
+  gap: 20px;                    /* Espaço entre os cards */
+  justify-content: center;     /* Centraliza os cards horizontalmente */
+  flex-wrap: wrap;             /* Permite quebrar linha se a tela for pequena */
+  padding: 40px 20px;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+    color: #4f46e5;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .card p {
+    color: #374151;
+    margin-top: 0.5rem;
+  }
+  .cursos-avaliados {
+    background-color: #f9fafb;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
